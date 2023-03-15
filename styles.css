@@ -260,11 +260,10 @@ nav ul li a:hover::after{
 }
 .contact-left{
     flex-basis: 35%;
-    border: 
 }
 .contact-right{
     flex-basis: 60%;
-    border:
+    
 }
 .contact-left p{
     margin-top: 20px;
@@ -321,4 +320,64 @@ form .btn2{
     padding: 25px 0;
     text-align: center;
     font-weight: 300;
+}
+
+
+
+nav .fa-solid{
+    display: none;
+}
+@media only screen and (max-width: 600px){
+    #header{
+        background-image: url(images/phone-background.png);
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    nav  .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #ff004f;
+        position:fixed;
+        top: 0;
+        right: -200PX;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+        position: relative;
+    }
+    nav ul i{
+        position :absolute;
+        top: 25px;
+        left: 25px;
+    }
+    .about-col-1 ,.about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-link{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+        padding-right: 10px;
+    }
+    .sub-title{
+        font-size: 38px;
+    }
 }
